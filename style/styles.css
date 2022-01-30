@@ -1,0 +1,60 @@
+header{
+    width: 100%;
+    height: 150px;
+    border-bottom: 3px solid black;
+    background-color: cornflowerblue;
+}
+body{
+    margin: 0;
+    font-weight: 700;
+    font-size: 25px;
+}
+.image{
+    padding-top: 51px;
+}
+main{
+    height: 700px;
+    background-color: darkkhaki;
+    text-align: center;
+}
+aside{
+    float: left;
+    height: 694px;
+    width: 500px;
+    border: 3px solid black;
+    background-color: cornflowerblue;
+}
+.my_name{
+    height: 100px;
+    width: calc(100% - 547px);
+    margin-top: 20px;
+    padding: 20px 0 0 0;
+    margin-left: 17px;
+    float: left;
+    border: 3px solid black;
+    background-color: cornflowerblue;
+
+}
+.about_me{
+    float: left;
+    height: 498px;
+    width: 750px;
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 20px 0 0 0;
+    border: 3px solid black;
+    background-color: cornflowerblue;
+}
+.opinion{
+    float: right;
+    margin-right: 30px;
+    height: 498px;
+    width: 500px;
+    margin-top: 30px;
+    padding: 20px 0 0 0;
+    border: 3px solid black;
+    background-color: cornflowerblue;
+}
+
+
+
