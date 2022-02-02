@@ -1,38 +1,52 @@
 header{
-    width: 100%;
+    width: calc(100% - 26px);
     height: 150px;
-    border-bottom: 3px solid black;
+    border: 3px solid black;
     background-color: cornflowerblue;
+    margin: 10px;
+    border-radius: 10px;
 }
 body{
+    background-color: darkkhaki;
     margin: 0;
     font-weight: 700;
     font-size: 25px;
 }
 .image{
+    float: left;
     padding-top: 51px;
 }
+.link{
+    font-size: 20px;
+    float: left;
+    padding-left: 10px;
+    padding-top: 62px;
+}
 main{
-    height: 700px;
-    background-color: darkkhaki;
     text-align: center;
 }
 aside{
     float: left;
-    height: 694px;
+    height: 674px;
     width: 500px;
     border: 3px solid black;
     background-color: cornflowerblue;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.my_name, .about_me, .opinion{
+    padding: 20px 0 0 0;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    border: 3px solid black;
 }
 .my_name{
-    height: 100px;
-    width: calc(100% - 547px);
-    margin-top: 20px;
-    padding: 20px 0 0 0;
-    margin-left: 17px;
     float: left;
-    border: 3px solid black;
-    background-color: cornflowerblue;
+    height: 100px;
+    width: calc(100% - 550px);
+    margin-top: 20px;
+    margin-left: 17px;
 
 }
 .about_me{
@@ -41,9 +55,6 @@ aside{
     width: 750px;
     margin-left: 30px;
     margin-top: 30px;
-    padding: 20px 0 0 0;
-    border: 3px solid black;
-    background-color: cornflowerblue;
 }
 .opinion{
     float: right;
@@ -51,9 +62,6 @@ aside{
     height: 498px;
     width: 500px;
     margin-top: 30px;
-    padding: 20px 0 0 0;
-    border: 3px solid black;
-    background-color: cornflowerblue;
 }
 
 
