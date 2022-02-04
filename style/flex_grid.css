@@ -2,7 +2,7 @@
     background-color: darkgray;
     display: flex;
     height: 100%;
-    padding: 10px
+    padding: 10px;
 }
 .block{
     height: 450px;
@@ -12,27 +12,21 @@
     height: 65%;
     margin: 10px;
     border-radius: 20px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
-a:link {
+a{
     text-decoration: none;
     color: white;
 }
-a:visited {
-    text-decoration: none;
-    color: antiquewhite;
+.text_flex{
+    height: 25%;
+    margin: 6% 7% 7% 7%;
+    background-color: goldenrod;
+    transition-duration: .2s;
 }
-.text{
-     height: 25%;
-     margin: 6% 7% 7% 7%;
-     background-color: goldenrod;
-     transition-duration: .2s;
-}
-.text:hover{
+.text_flex:hover{
     transform: scale(1.1);
-}
-.img{
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
 }
 .img__1{
     background-image: url("https://avatars.mds.yandex.net/get-zen_doc/1665167/pub_60825cfb74b5ae3b0bd83da2_60826270ff8fff5a642c0a41/scale_1200");
@@ -57,17 +51,18 @@ a:visited {
     display: grid;
     justify-items: center;
 }
-.img_grid, .text_grid, .text{
+.img_grid, .text_grid, .text_flex{
     display: flex;
     justify-content: center;
     place-items: center;
-    text-align: center;
     border-radius: 20px;
 }
 .img_grid{
     width: 55%;
     height: 300px;
     margin: 10px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .text_grid{
     width: 40%;
@@ -81,10 +76,6 @@ a:visited {
 .block__grid_1{
     margin-top: 50px;
 }
-.img_grid{
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
 .img__grid_1{
     background-image: url("https://new-year-party.ru/wp-content/uploads/2021/02/tigr-28.jpg");
 }
@@ -97,5 +88,4 @@ a:visited {
 .img__grid_4{
     background-image: url("https://fb.ru/media/i/3/9/0/9/1/2/i/390912.jpg");
 }
-
 

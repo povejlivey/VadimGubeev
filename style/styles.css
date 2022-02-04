@@ -1,75 +1,84 @@
+body{
+    background-color: darkgray;
+}
 header{
     display: flex;
-    width: calc(100% - 26px);
-    height: 150px;
-    border: 3px solid black;
-    background-color: cornflowerblue;
-    margin: 10px;
+    height: 100px;
+    background-color: gold;
     border-radius: 10px;
-}
-body{
-    background-color: darkkhaki;
-    margin: 0;
-    font-weight: 700;
-    font-size: 25px;
+    width: calc(100% - 26px);
+    border: 3px solid black;
+    margin: 10px;
 }
 .image{
+    margin-top: 26px;
     height: 48px;
-    padding-top: 51px;
+    width: 48px;
 }
-.link{
-    font-size: 20px;
+
+div{
+    overflow: hidden;
+}
+.table{
+    font-size: 16px;
+    margin-top: 42px;
+}
+.photo{
     display: flex;
-    padding-left: 10px;
-    padding-top: 62px;
-}
-.link:link{
-    color: black;
-}
-.link:visited{
-    color: black;
-}
-main{
-    text-align: center;
-}
-aside{
-    float: left;
-    height: 674px;
-    width: 500px;
+    height: 551px;
+    width: 35%;
     border: 3px solid black;
     background-color: cornflowerblue;
     margin-top: 20px;
     border-radius: 10px;
     margin-left: 10px;
+    justify-content: center;
+    place-items: center;
 }
-.my_name, .about_me, .opinion{
-    padding: 20px 0 0 0;
-    border-radius: 10px;
-    background-color: cornflowerblue;
-    border: 3px solid black;
-}
-.my_name{
-    float: left;
+.name{
     height: 100px;
-    width: calc(100% - 550px);
-    margin-top: 20px;
-    margin-left: 17px;
-
+    background-color: goldenrod;
+    display: flex;
+    margin: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    justify-content: center;
+    place-items: center;
 }
-.about_me{
-    float: left;
-    height: 498px;
-    width: 750px;
-    margin-left: 30px;
-    margin-top: 30px;
+.text{
+    height: 100%;
+    width: 100%;
+}
+.text_1{
+    height: 100%;
+    display: flex;
+    margin: 30px;
+}
+.info{
+    display: flex;
+    height: 416px;
+    width: 60%;
+    background-color: khaki;
+    margin-right: 50px;
+    border-radius: 10px;
+    border: 3px solid black;
+    justify-content: center;
+    place-items: center;
 }
 .opinion{
-    float: left;
-    margin-right: 30px;
-    height: 498px;
-    width: 500px;
-    margin-top: 30px;
-    margin-left: 65px;
+    display: flex;
+    height: 416px;
+    width: 40%;
+    background-color: teal;
+    border-radius: 10px;
+    border: 3px solid black;
+    justify-content: center;
+    place-items: center;
+}
+.info_block{
+    display: flex;
+    border-bottom: 5px solid black;
+    font-size: 20px;
 }
 
 
