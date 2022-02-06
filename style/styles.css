@@ -1,5 +1,6 @@
 body{
     background-color: darkgray;
+    font-size: 24px;
 }
 header{
     display: flex;
@@ -17,21 +18,22 @@ header{
 }
 
 div{
-    overflow: hidden;
+    hyphens: auto;
 }
 .table{
-    font-size: 16px;
-    margin-top: 42px;
+    margin-top: 38px;
+}
+.color_link{
+    color: black;
 }
 .photo{
     display: flex;
     height: 551px;
-    width: 35%;
+    width: 600px;
     border: 3px solid black;
     background-color: cornflowerblue;
-    margin-top: 20px;
+    margin: 20px;
     border-radius: 10px;
-    margin-left: 10px;
     justify-content: center;
     place-items: center;
 }
@@ -57,7 +59,7 @@ div{
 .info{
     display: flex;
     height: 416px;
-    width: 60%;
+    width: 100%;
     background-color: khaki;
     margin-right: 50px;
     border-radius: 10px;
@@ -68,7 +70,7 @@ div{
 .opinion{
     display: flex;
     height: 416px;
-    width: 40%;
+    width: 100%;
     background-color: teal;
     border-radius: 10px;
     border: 3px solid black;
@@ -78,7 +80,6 @@ div{
 .info_block{
     display: flex;
     border-bottom: 5px solid black;
-    font-size: 20px;
 }
 
 
