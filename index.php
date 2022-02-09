@@ -67,5 +67,33 @@
         </div>
     </section>
 </main>
+<?
+date_default_timezone_set("Asia/Yekaterinburg");
+$date = new DateTime('NOW');
+$hour = $date->format('G');
+if ( ($hour > 8) && ($hour < 20) ) {
+    echo  <<<HTML
+    <style>
+    body{
+    background-color: darkgray;
+    }
+</style>
+HTML;
+} else{
+    echo  <<<HTML
+    <style>
+    body{
+    background-color: black;
+    }
+    .container{
+    border-bottom: 5px solid darkgray;
+    }
+    .img{
+    border: 3px solid white;
+    }
+</style>
+HTML;
+}
+?>
 </body>
 </html>

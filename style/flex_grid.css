@@ -1,5 +1,4 @@
 .main{
-    background-color: darkgray;
     display: flex;
     height: 100%;
     padding: 10px;
@@ -52,7 +51,6 @@ a{
 
 .main_grid{
     height: 100%;
-    background-color: darkgray;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-bottom: 10px;
