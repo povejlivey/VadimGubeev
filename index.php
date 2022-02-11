@@ -1,18 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="style/styles.css">
-    <link rel="stylesheet" href="style/flex_grid.css">
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-<header><img class="image" src="img/hamster.png" alt="#">
-    <div class="table"><a class="color_link" href="table.html">Таблица Менделеева</a></div>
-</header>
+<?php
+require 'header.php';
+?>
+
 <main>
     <section class="info_block">
         <aside class="photo">Фото</aside>
@@ -35,11 +24,11 @@
                     <div class="img img__2"></div>
                     <div class="text_flex"><a target="_blank" href="https://www.kinopoisk.ru/film/679830/">Мстители: Эра альтрона</a></div>
                 </div>
-                <div class="block block__media_4">
+                <div class="block block__media_4 block_wrap">
                     <div class="img img__3"></div>
                     <div class="text_flex"><a target="_blank" href="https://www.kinopoisk.ru/film/843649/">Мстители: Война Бесконечности</a></div>
                 </div>
-                <div class="block block__media_4">
+                <div class="block block__media_4 block_wrap">
                     <div class="img img__4"></div>
                     <div class="text_flex"><a target="_blank" href="https://www.kinopoisk.ru/film/843650/">Мстители: Финал</a></div>
                 </div>
@@ -67,33 +56,9 @@
         </div>
     </section>
 </main>
+
 <?
-date_default_timezone_set("Asia/Yekaterinburg");
-$date = new DateTime('NOW');
-$hour = $date->format('G');
-if ( ($hour > 8) && ($hour < 20) ) {
-    echo  <<<HTML
-    <style>
-    body{
-    background-color: darkgray;
-    }
-</style>
-HTML;
-} else{
-    echo  <<<HTML
-    <style>
-    body{
-    background-color: black;
-    }
-    .container{
-    border-bottom: 5px solid darkgray;
-    }
-    .img{
-    border: 3px solid white;
-    }
-</style>
-HTML;
-}
+require 'Time_style.php';
 ?>
 </body>
 </html>
