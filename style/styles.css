@@ -15,7 +15,6 @@ header{
     margin-top: 26px;
     height: 48px;
     width: 48px;
-
 }
 
 div{
@@ -58,6 +57,7 @@ a:hover{
     border-radius: 10px;
     justify-content: center;
     place-items: center;
+    text-align: center;
 }
 .name{
     height: 100px;
@@ -68,6 +68,7 @@ a:hover{
     border-radius: 10px;
     justify-content: center;
     place-items: center;
+    text-align: center;
 }
 .text{
     height: 100%;
@@ -88,6 +89,7 @@ a:hover{
     border: 3px solid black;
     justify-content: center;
     place-items: center;
+    text-align: center;
 }
 .opinion{
     display: flex;
@@ -98,6 +100,7 @@ a:hover{
     border: 3px solid black;
     justify-content: center;
     place-items: center;
+    text-align: center;
 }
 .info_block{
     display: flex;

@@ -125,11 +125,13 @@ a{
 
 @media (max-width: 820px) {
     .info_block{
+        display: flex;
         flex-wrap: wrap;
         width: 100%;
+        justify-content: center;
     }
     .name{
-        margin: 0;
+        margin-top: -10px;
     }
     .text_1{
         width: 100%;
@@ -139,6 +141,8 @@ a{
         width: 100%;
         margin-top: 30px;
         justify-content: center;
+        place-items: center;
+        text-align: center;
         margin-right: 50px;
     }
     .text_flex{
@@ -165,9 +169,15 @@ a{
     }
     .container_grid{
         margin-top: 50px;
+
     }
-    .photo{
-        width: 100%;
+    .photo {
+        width: 90%;
+    }
+    .info{
+        justify-content: center;
+        place-items: center;
+        text-align: center;
     }
 }
 
@@ -222,5 +232,4 @@ a{
         background-size: 100% 100%;
     }
 }
-
 
