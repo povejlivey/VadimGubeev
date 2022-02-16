@@ -13,11 +13,16 @@ require 'header.php';
                     <div>
                         <?php
                         $all_text2[] = 'Тут будет какая то информация обо мне, а может и не будет.';
+                        function firstWord()
+                        {
+                            global $all_text2;
                             $mass = explode(" ", $all_text2[4]);
                             $zam = "<span style='color: red;'>$mass[0]</span>";
                             $str_info = str_replace($mass[0]/*что меням*/, /*на что меням*/ $zam, /*где меням*/ $mass);
                             $str_info = implode(" ", $str_info);
                             print_r($str_info);
+                        }
+                        firstWord();
                         ?>
                     </div>
                 </div>
@@ -25,6 +30,8 @@ require 'header.php';
                     <div>
                     <?php
                     $all_text2[] = 'Абсолютно не интересная информация';
+                    function evenOdd(){
+                        global $all_text2;
                         $mass1 = explode(" ", $all_text2[5]);
                         for ($i = 0; $i < count($mass1); $i++) {
                             if ($i % 2 === 0) {
@@ -34,7 +41,9 @@ require 'header.php';
                                 $odd = "<span style='color: yellowgreen'>$mass1[$i]</span> ";
                                 print_r($odd);
                             }
+                        }
                     }
+                    evenOdd();
                     ?>
                     </div>
                 </div>
@@ -89,6 +98,8 @@ require 'Time_style.php';
 require "footer.php";
 
 $all_text2[] = "";
+function numberOfLetters(){
+    global $all_text2;
     $ar = ['а', 'е', 'ё', 'и', 'о', 'у', 'ы', 'э', 'ю', 'я'];
     $Ar = ['А', 'Е', 'Ё', 'И', 'О', 'У', 'Ы', 'Э', 'Ю', 'Я'];
     for ($i = 0; $i < count($all_text2); $i++) {
@@ -102,17 +113,28 @@ $all_text2[] = "";
             }
         }
     }echo "Количество букв на странице - $count<br>";
+}
+numberOfLetters();
 
 
+function numberOfWords()
+{
+    global $all_text2;
     for ($i = 0; $i < count($all_text2); $i++) {
         $word_count += count(explode(' ', $all_text2[$i]));
     }
     echo "Количество слов на странице - $word_count";
+}
+numberOfWords();
 
-$myBirthday = date_create("03.03.1994");
-$date = date_create(date("now"));
-$interval = date_diff($myBirthday, $date);
-echo $interval->format('<br>Прожил %a дней');
+
+function days(){
+    $myBirthday = date_create("03.03.1994");
+    $date = date_create(date("now"));
+    $interval = date_diff($myBirthday, $date);
+    echo $interval->format('<br>Прожил %a дней');
+}
+days();
 ?>
 </body>
 </html>
